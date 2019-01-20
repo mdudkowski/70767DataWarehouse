@@ -7,12 +7,12 @@
   DTS:CreatorName="ITK\tomek"
   DTS:DTSID="{158B4C20-EA82-4738-A351-178337C55D05}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
   DTS:LocaleID="1045"
   DTS:ObjectName="01_Variables_ExprTask"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{FDBD854C-9BFF-43BE-A680-C04C52F3EB85}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{3F6074ED-DD0C-4C5E-8644-F32EDE96118D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -76,7 +76,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="ExprTasak_1"
       DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ExpressionTask
@@ -92,7 +92,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="ExprTasak_2"
       DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ExpressionTask

@@ -7,12 +7,12 @@
   DTS:CreatorName="ITK\tomek"
   DTS:DTSID="{0454B159-4DB1-4FED-A3F8-5B82470F128F}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.101"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
   DTS:LocaleID="1045"
   DTS:ObjectName="02_Variables_SqlFromVar"
   DTS:PackageType="5"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{02D3D483-7D83-4838-8D1E-35880CA5087C}">
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{782B7DEE-349B-478E-9DA5-A9771F9B755F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -25,7 +25,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="SqlCmd">
       <DTS:VariableValue
-        DTS:DataType="8">INSERT INTO t01_VarInsert VALUES('TestPAczki','2017-01-01',0)</DTS:VariableValue>
+        DTS:DataType="8">INSERT INTO t01_VarInsert VALUES('TestPAczki2','01.01.2016',0)</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -34,7 +34,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VariableStartTime">
       <DTS:VariableValue
-        DTS:DataType="7">1/1/2017</DTS:VariableValue>
+        DTS:DataType="7">1/1/2016</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -43,7 +43,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VariableText">
       <DTS:VariableValue
-        DTS:DataType="8">TestPAczki</DTS:VariableValue>
+        DTS:DataType="8">TestPAczki2</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>

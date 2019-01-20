@@ -7,12 +7,12 @@
   DTS:CreatorName="ITK\tomek"
   DTS:DTSID="{2A4FDF61-D53D-4F23-9216-2CAB6FBB7981}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
   DTS:LocaleID="1045"
   DTS:ObjectName="05_CopyColCharacterMap"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{DF60C835-048B-4ACC-8967-B2DF462E18EF}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{CD4A88BB-BA0F-4DCD-95CE-3F34A585A461}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -105,7 +105,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -218,14 +218,14 @@
                       cachedLength="100"
                       cachedName="CopyAddressLine1"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CopyAddressLine1]"
-                      lineageId="Package\Data Flow Task\17:invalid" />
+                      lineageId="Package\Data Flow Task\129:invalid" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CopyAddressLine2]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="CopyAddressLine2"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CopyAddressLine2]"
-                      lineageId="Package\Data Flow Task\19:invalid" />
+                      lineageId="Package\Data Flow Task\130:invalid" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -338,7 +338,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -653,6 +653,11 @@
           </components>
           <paths>
             <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
               endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
               name="OLE DB Source Output"
@@ -685,19 +690,19 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\OLE DB Source"
           TopLeft="110,68" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="198,327" />
-        <NodeLayout
           Size="154,42"
           Id="Package\Data Flow Task\Derived Column"
           TopLeft="159,194" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="198,327" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="195.5,110">
@@ -730,6 +735,42 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="236,236">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.5,91"
+              Start="0,0"
+              End="47.5,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5"
+                    Point2="0,45.5"
+                    Point3="4,45.5" />
+                  <mssgle:LineSegment
+                    End="43.5,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43.5,45.5"
+                    Point2="47.5,45.5"
+                    Point3="47.5,49.5" />
+                  <mssgle:LineSegment
+                    End="47.5,83.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.75,50.5,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -7,12 +7,12 @@
   DTS:CreatorName="ITK\tomek"
   DTS:DTSID="{59380F2E-243B-424D-933B-7602BCF30CBC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
   DTS:LocaleID="1045"
   DTS:ObjectName="03_Variables_RowCount"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{3CF1FDF2-EBD9-43FB-9CDE-64E3F727F1DB}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{D69ABBE9-153F-472E-B7C2-0CB9238B7042}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -104,7 +104,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
